@@ -1,0 +1,17 @@
+from urllib.request import Request, urlopen
+from fake_useragent import UserAgent
+from bs4 import BeautifulSoup
+import ssl
+
+url_base = "https://www.chicagomag.com/"
+url_sub = "Chicago-Magazine/November-ffff2012/Best-Sandwiches-Chicago/"
+url  = url_base + url_sub
+
+ua = UserAgent()
+ua.ie
+
+context = ssl._create_unverified_context()
+req = Request(url, headers={"User-Agent": ua.ie})
+response = urlopen(req, context=context)
+soup = BeautifulSoup(response, "html.parser")
+print(soup.prettify())
