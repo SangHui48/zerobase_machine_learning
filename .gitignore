@@ -6,3 +6,6 @@ machine_learning/dataset/*
 data/*
 
 deeplearning/data/*
+
+*.png
+*.PNG
