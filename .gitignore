@@ -9,3 +9,4 @@ deeplearning/data/*
 
 *.png
 *.PNG
+deeplearning/mask_data/*
